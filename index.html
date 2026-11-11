@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- SEO: Always include the lang attribute -->
+<html lang="en">
 <head>
-    <!-- SEO & Metadata go here (Title, Meta Description, Viewport) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primary Page Title for Search Engines</title>
-    
-    <!-- Crucial SEO & Sharing Tags -->
     <meta name="description" content="A brief, engaging summary of this page for search engine results.">
+    <!-- Authoritative URL of a page. Prevents duplicate content penalties if page can be accessed via multiple URLs. -->
     <link rel="canonical" href="https://www.example.com/page">
 </head>
 <body>
 
+    <!-- Header: site-wide branding, logo, and primary navigation -->
     <header>
-        <!-- Site-wide branding, logo, and primary navigation -->
         <nav>
-            <!-- SEO: Search engines use <nav> to understand your site's core link structure -->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -23,24 +20,37 @@
         </nav>
     </header>
 
+    <!-- Main: the core, unique content of the page -->
     <main>
-        <!-- SEO: Exactly ONE <h1> per page representing the main topic -->
+
+        <!-- H1: exactly ONE per page, representing the main topic -->
         <h1>The Main Subject of This Page</h1>
 
-        <!-- Article for self-contained main content -->
+        <!-- Section: thematic groupings of content. Each should start with a heading tag (<h2> through <h6>) -->
+        <section>
+            <h2>Section Title (Sub-topic)</h2>
+            <p>Content goes here...</p>
+        </section>
+
+        <section>
+            <h2>Another Section Title</h2>
+            <p>More content goes here...</p>
+            <!-- Use headings sequentially -->
+            <h3>Sub Section Title</h3>
+        </section>
+
+        <!-- Article: content that is fully self-contained and could stand alone outside the website -->
         <article>
-            <!-- SEO: The core, unique content of the page. Google relies heavily on <main> -->
             <section>
-                <!-- Thematic grouping of content (should include an <h1> or <h2>) -->
                 <h2>Understanding Semantic HTML</h2>
+                <!-- Time: helps search engines parse publication or update dates -->
                 <p>Published on <time datetime="2026-06-06">June 6, 2026</time></p>
-                
-                <!-- Figure + Figcaption for Image SEO -->
+
                 <figure>
                     <img src="html-structure.png" alt="Diagram showing HTML document tree">
                     <figcaption>Figure 1: Visual layout of semantic tags.</figcaption>
                 </figure>
-                
+
                 <p>Content goes here...</p>
             </section>
 
@@ -50,7 +60,7 @@
             </section>
         </article>
 
-        <!-- Aside for tangential info / sidebar -->
+        <!-- Aside: content tangentially related to it's surroundings e.g. sidebar, author bio, related links -->
         <aside>
             <h3>Related Articles</h3>
             <ul>
@@ -60,8 +70,8 @@
         </aside>
     </main>
 
+    <!-- Footer: copyright, privacy policy, links -->
     <footer>
-        <!-- Footer info, copyright, privacy policy links -->
         <p>&copy; 2026 Company Name</p>
     </footer>
 
